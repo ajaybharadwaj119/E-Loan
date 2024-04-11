@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.NotifFragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/background_shape"
+           android:orientation="horizontal"
+           android:padding="10dp">
+
+           <ImageView
+               android:id="@+id/imageViewBack"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_vertical"
+               android:background="?attr/selectableItemBackground"
+               android:clickable="true"
+               android:visibility="invisible"
+               android:padding="8sp"
+               android:src="@drawable/leftarrow"
+               app:tint="@color/white" />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_weight="1"
+               android:gravity="center"
+               android:text="Notification"
+               android:textColor="@color/white"
+               android:textSize="16sp"
+               android:textStyle="bold" />
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_vertical"
+               android:background="?attr/selectableItemBackground"
+               android:clickable="true"
+               android:padding="8sp"
+               android:src="@drawable/leftarrow"
+               android:visibility="invisible"
+               app:tint="@color/white" />
+
+       </LinearLayout>
+
+
+
+
+   </LinearLayout>
+
+</FrameLayout>

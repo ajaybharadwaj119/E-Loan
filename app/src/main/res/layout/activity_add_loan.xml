@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_shape"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imageViewBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="8sp"
+                    android:src="@drawable/leftarrow"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/add_loan"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="8sp"
+                    android:src="@drawable/leftarrow"
+                    android:visibility="invisible"
+                    app:tint="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.8"
+                        android:text="@string/customer_name"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/edtCusName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_shape"
+                        android:backgroundTint="#E1FBE4"
+                        android:hint="@string/enter_customer_name"
+                        android:inputType="textPersonName"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="8dp"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.8"
+                        android:text="@string/loan_amount"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/edtLoanAmt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_shape"
+                        android:backgroundTint="#E1FBE4"
+                        android:hint="@string/enter_loan_amount"
+                        android:inputType="number"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="8dp"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.8"
+                        android:text="@string/interest"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/edtInterest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_shape"
+                        android:backgroundTint="#E1FBE4"
+                        android:drawableRight="@drawable/percent"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:hint="@string/enter_interest"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="8dp"
+                        android:text="2"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.8"
+                        android:text="@string/due_amount"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/edtDueAmt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_shape"
+                        android:backgroundTint="#EFF4FE"
+                        android:hint="@string/enter_due_amount"
+                        android:inputType="number"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="8dp"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.8"
+                        android:text="@string/no_of_dues"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/edtNoDue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_shape"
+                        android:backgroundTint="#EFF4FE"
+                        android:hint="@string/enter_no_of_due"
+                        android:inputType="number"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="8dp"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvStDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_shape"
+                        android:backgroundTint="#E1FBE4"
+                        android:drawableLeft="@drawable/cale"
+                        android:drawablePadding="10dp"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="8dp"
+                        android:text="@string/start_date"
+                        android:textColor="#80000000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tvEnDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_shape"
+                        android:backgroundTint="#EFF4FE"
+                        android:drawableLeft="@drawable/cale"
+                        android:drawablePadding="10dp"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="8dp"
+                        android:text="@string/end_date"
+                        android:textColor="#80000000"
+                        android:textSize="14sp"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/edit_text_shape"
+                android:backgroundTint="@color/green"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="8dp"
+                android:text="@string/submit"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
